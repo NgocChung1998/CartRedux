@@ -5,6 +5,7 @@ class Header extends Component {
     return (
       <header>
         <ul
+        
           id="slide-out"
           className="side-nav hidden custom-scrollbar sn-bg-2 ps ps--theme_default"
           data-ps-id="c27390a3-9efc-e0d8-197a-ab96d73a156a"
@@ -275,7 +276,8 @@ class Header extends Component {
             <div className="ps__scrollbar-y" tabIndex={0} />
           </div>
         </ul>
-        <nav className="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-dark scrolling-navbar double-nav">
+        <nav
+         className="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-dark scrolling-navbar double-nav">
           <div className="float-left">
             <a data-activates="slide-out" className="button-collapse">
               <i className="fa fa-bars" />

@@ -8,13 +8,14 @@ class Product extends Component {
       result.push(<i key={i} className="fa fa-star"></i>);
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i key={j+100} className="fa fa-star-o"></i>);
+      result.push(<i key={j + 100} className="fa fa-star-o"></i>);
     }
 
     return result;
   }
   render() {
     var { product } = this.props;
+
     return (
       <div className="row">
         {/* Product */}
@@ -48,6 +49,7 @@ class Product extends Component {
                     data-toggle="tooltip"
                     data-placement="top"
                     title
+                   onClick={()=>this.onAddtoCart(product)}
                     data-original-title="Add to Cart"
                   >
                     <i className="fa fa-shopping-cart" />
@@ -60,6 +62,9 @@ class Product extends Component {
       </div>
     );
   }
+  onAddtoCart = product => {
+    this.props.onAddToCart(product);
+  };
 }
 
 export default Product;

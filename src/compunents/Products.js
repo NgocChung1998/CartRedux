@@ -4,9 +4,10 @@ import Product from './Product'
 class Products extends Component {
   render(){
     var {products} = this.props;
+   
   return (
     <section className="section">
-        <h1 className="section-heading">Danh Sách Sản Phẩm</h1>
+        <h1 style={{display:'none'}} className="section-heading">Danh Sách Sản Phẩm</h1>
         <div className="row">
           {/* {this.showProducts(products)} */}
           {this.props.children}
